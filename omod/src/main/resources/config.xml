@@ -61,8 +61,43 @@
 		<name>App: Edit Visit</name>
 		<description>Able to access old patient search page to edit visit</description>
 	</privilege>
+<<<<<<< HEAD
 
 	<!-- Required Global Properties 
+=======
+	<privilege>
+		<name>App: View visit note encounter on the Patient Search</name>
+		<description>Able to view visit note encounter on the patient search fragment</description>
+	</privilege>
+	<privilege>
+		<name>App: View lab prescription encounter on the Patient Search</name>
+		<description>Able to view lab prescription encounter on the patient search fragment</description>
+	</privilege>
+
+	<globalProperty>
+		<property>${project.parent.artifactId}.showVisitNoteEncounter</property>
+		<defaultValue>false</defaultValue>
+		<description>Show the visit note encounter on the patient search fragment</description>
+	</globalProperty>
+
+	<globalProperty>
+		<property>${project.parent.artifactId}.visitNoteEncounterTypeUuid</property>
+		<description>Visit note encounter type uuid that should be used on the patient search</description>
+	</globalProperty>
+
+	<globalProperty>
+		<property>${project.parent.artifactId}.showLabPrescriptionEncounter</property>
+		<defaultValue>false</defaultValue>
+		<description>Show the lab prescription encounter on the patient search fragment</description>
+	</globalProperty>
+
+	<globalProperty>
+		<property>${project.parent.artifactId}.labPrescriptionEncounterTypeUuid</property>
+		<description>Lab Prescription encounter type uuid that should be used on the patient search</description>
+	</globalProperty>
+
+	<!-- Required Global Properties
+>>>>>>> ffdf5a6... impl_mar-61 Show lab and prescription encounter details
 	<globalProperty>
 		<property>@MODULE_ID@.someProperty</property>
 		<defaultValue></defaultValue>
